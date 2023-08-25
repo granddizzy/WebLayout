@@ -1,0 +1,29 @@
+.catalog {
+    display: table;
+    width: 100%;
+}
+
+.catalog-line {
+    display: table-row;
+    width: 100%;
+}
+
+.catalog-cell {
+    padding: 20px;
+    display: table-cell;
+    width: 33.33%;
+}
+
+.catalog-cell img{
+    width: 100%;
+}
+
+.catalog-title {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.catalog-about {
+
+}
