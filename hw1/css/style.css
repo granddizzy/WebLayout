@@ -16,6 +16,7 @@
 
 .catalog-cell img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .catalog-title {
@@ -36,6 +37,16 @@ a {
     color: cornflowerblue;
     font-size: 16px;
     line-height: 20px;
+}
+
+.top-menu a:hover {
+    color: red;
+}
+
+.top-menu a:focus-visible {
+    /*border: 2px solid red;*/
+    color: red;
+    outline: none;
 }
 
 .text {
@@ -59,4 +70,43 @@ a {
     font-size: 28px;
     line-height: 36px;
     font-weight: bold;
+}
+
+.feedback {
+    width: 360px;
+}
+
+.feedback input, textarea{
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 20px;
+    background-color: #DCDCDC;
+}
+
+.feedback input:focus, textarea:focus{
+    background-color: white;
+}
+
+.feedback button {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.feedback input::placeholder, textarea::placeholder {
+    font-family: "Times New Roman", serif;
+    letter-spacing: 4px;
+}
+
+body {
+    font-family: sans-serif;
 }
