@@ -52,13 +52,20 @@ img {
 .navigation {
     display: flex;
     gap: 36px;
-    color: #F25822;
-    font-family: Gilroy-SemiBold;
+    font-family: Gilroy-SemiBold, serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     flex-wrap: wrap;
+}
+
+.navigation a {
+    color: #000;
+}
+
+.navigation .active {
+    color: #F25822;
 }
 
 .content {
@@ -68,12 +75,12 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    padding-top: 69px;
+    padding-bottom: 167px;
 }
 
 .content__left-side {
     max-width: 522px;
-    padding-bottom: 167px;
-    padding-top: 167px;
 }
 
 .main .content img {
@@ -81,7 +88,7 @@ img {
 }
 
 .text1 {
-    font-family: Gilroy-Bold;
+    font-family: Gilroy-Bold, serif;
     font-size: 60px;
     font-style: normal;
     font-weight: 400;
@@ -90,7 +97,7 @@ img {
 
 .text2 {
     color: #888;
-    font-family: Gilroy-Medium;
+    font-family: Gilroy-Medium, serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -112,7 +119,7 @@ img {
 
 .button1 {
     color: #FFF;
-    font-family: Gilroy-Bold;
+    font-family: Gilroy-Bold, serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -120,18 +127,20 @@ img {
 
     border-radius: 50px;
     background: #F25822;
-    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    box-shadow: 4px 4px 8px 0 rgba(242, 88, 34, 0.20);
 
     width: 140px;
     height: 50px;
     flex-shrink: 0;
 
     border: 0;
+
+    cursor: pointer;
 }
 
 .content__btn a {
     color: #AAA;
-    font-family: Gilroy-Bold;
+    font-family: Gilroy-Bold, serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -144,5 +153,6 @@ img {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-between;
-    margin: 97px auto;
+    margin-top: 97px;
+    margin-bottom: 97px;
 }
