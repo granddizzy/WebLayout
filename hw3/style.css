@@ -72,19 +72,16 @@ img {
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
     padding-top: 69px;
     padding-bottom: 167px;
+    gap: 41px;
 }
 
 .content__left-side {
     max-width: 522px;
-}
-
-.main .content img {
-    margin: 0 64px 0 0;
 }
 
 .text1 {
