@@ -133,18 +133,21 @@ img {
     height: 50px;
     flex-shrink: 0;
 
-    border: 0;
+    border: none;
 
     cursor: pointer;
 }
 
-.content__btn a {
+.button2 {
     color: #AAA;
     font-family: Gilroy-Bold, serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .logos {
