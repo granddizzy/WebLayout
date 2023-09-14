@@ -68,12 +68,12 @@ img {
     max-width: 1600px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
-    gap: 80px;
+    gap: 0px;
 }
 
 .brand_texts {
@@ -85,6 +85,8 @@ img {
     line-height: normal;
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
+    margin-right: 300px;
+    min-width: 400px;
 }
 
 .brand_text1 {
@@ -217,6 +219,8 @@ img {
 
 .fetured_item {
     background-color: #F8F8F8;
+    background-repeat: space;
+    background-position: center;
 }
 
 .fetured_text {
@@ -267,4 +271,95 @@ img {
     background-color: #FFF;
     border: 1px solid #F25822;
     cursor: pointer;
+}
+
+@media (max-width: 1050px) and (min-width: 580px) {
+    .bannerContainer {
+        justify-content: center;
+    }
+
+    .brand_texts {
+        margin: 0 0 0 0;
+    }
+
+    .bannerContainer img {
+        max-height: 386px;
+    }
+
+    .brand_texts {
+        font-size: 44px;
+    }
+
+    .brand_text1 {
+        font-size: 24px;
+    }
+
+    .brand_text2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 579px) {
+    .bannerContainer {
+        justify-content: center;
+        min-height: 364px;
+    }
+
+    .brand_texts {
+        margin: 0 auto 0 auto;
+        min-width: 0;
+    }
+
+    .bannerContainer img {
+        display: none;
+    }
+
+    .brand_texts {
+        font-size: 38px;
+    }
+
+    .brand_text1 {
+        font-size: 20px;
+    }
+
+    .brand_text2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 735px) and (min-width: 358px) {
+    .section1 {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .fetured_box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fetured_items {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: 359px) {
+    .section1 {
+        grid-template-columns: 1fr;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .fetured_box {
+        grid-template-columns: 1fr;
+    }
+
+    .accesories {
+        grid-column-end: 2;
+    }
+
+    .fetured_items {
+        margin-right: 8px;
+        margin-left: 8px;
+    }
 }
