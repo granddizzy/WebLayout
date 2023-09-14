@@ -54,11 +54,17 @@ img {
     gap: 41px;
 }
 
-.header {
+.navButton {
+    background-color: #222;
+    border: none;
+    cursor: pointer;
+}
+
+.banner {
     background-color: #F1E4E6;
 }
 
-.headerContainer {
+.bannerContainer {
     max-width: 1600px;
     display: flex;
     flex-direction: row;
@@ -77,7 +83,6 @@ img {
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    /*border-left-color: #F16D7F;*/
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
 }
@@ -131,6 +136,10 @@ img {
     min-height: 260px;
 }
 
+.for_men .fill, .for_woman .fill, .for_kids .fill {
+    min-height: 260px;
+}
+
 .accesories {
     background-image: url("./img/accesories.png");
     grid-column-start: 1;
@@ -138,10 +147,13 @@ img {
     min-height: 180px;
 }
 
+.accesories .fill {
+    min-height: 180px;
+}
+
 .fill {
     background-color: rgba(33, 22, 22, 0.70);
     width: 100%;
-    min-height: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
