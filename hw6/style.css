@@ -224,6 +224,47 @@ img {
     background-position: center;
 }
 
+.fetured_item .photo {
+    position: relative;
+}
+
+.fetured_fill {
+    display: none;
+}
+
+.fetured_item:hover .fetured_fill {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(58, 56, 56, 0.86);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fetured_button {
+    display: flex;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    min-width: 139px;
+    padding-top: 11px;
+    padding-bottom: 8px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #FFF;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .fetured_text {
     padding: 24px 16px;
 }
@@ -343,7 +384,7 @@ img {
 }
 
 @media (max-width: 768px) {
-    .for_men, .for_woman, .for_kids{
+    .for_men, .for_woman, .for_kids {
         min-height: 168px;
     }
 
@@ -396,6 +437,7 @@ img {
     .navigation .buttonProfile, .navigation .buttonBasket {
         display: none;
     }
+
     .section1 {
         grid-template-columns: 1fr;
     }
@@ -408,7 +450,7 @@ img {
         grid-column-end: 2;
     }
 
-    .for_men, .for_woman, .for_kids{
+    .for_men, .for_woman, .for_kids {
         min-height: 247px;
     }
 
