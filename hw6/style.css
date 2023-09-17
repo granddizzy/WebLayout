@@ -23,7 +23,6 @@ img {
 
 .navigation {
     background-color: #222;
-    min-height: 75px;
     margin: 0 auto;
 }
 
@@ -34,6 +33,7 @@ img {
     justify-content: space-between;
     align-items: center;
     padding-top: 18px;
+    padding-bottom: 18px;
 }
 
 .navigation .leftSide {
@@ -179,6 +179,7 @@ img {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-align: center;
 }
 
 .fetured_items {
@@ -273,9 +274,15 @@ img {
     cursor: pointer;
 }
 
-@media (max-width: 1050px) and (min-width: 580px) {
+@media (max-width: 1050px) and (min-width: 680px) {
+    .navigation .container {
+        margin-left: 32px;
+        margin-right: 41px;
+    }
+
     .bannerContainer {
         justify-content: center;
+        gap: 40px;
     }
 
     .brand_texts {
@@ -288,6 +295,7 @@ img {
 
     .brand_texts {
         font-size: 44px;
+        border-left: 16px solid #F16D7F;
     }
 
     .brand_text1 {
@@ -299,7 +307,7 @@ img {
     }
 }
 
-@media (max-width: 579px) {
+@media (max-width: 679px) {
     .bannerContainer {
         justify-content: center;
         min-height: 364px;
@@ -327,12 +335,53 @@ img {
     }
 }
 
-@media (max-width: 735px) and (min-width: 358px) {
-    .section1 {
+@media (max-width: 1172px) {
+    .container {
         margin-left: 16px;
         margin-right: 16px;
     }
+}
 
+@media (max-width: 768px) {
+    .for_men, .for_woman, .for_kids{
+        min-height: 168px;
+    }
+
+    .for_men .fill, .for_woman .fill, .for_kids .fill {
+        min-height: 168px;
+    }
+
+    .accesories {
+        min-height: 116px;
+    }
+
+    .accesories .fill {
+        min-height: 116px;
+    }
+
+    .fetured_items {
+        margin-top: 109px;
+    }
+
+    .fetured_box {
+        padding-top: 72px;
+        gap: 16px;
+    }
+
+    .fetured_text {
+        padding: 26px 18px;
+    }
+
+    .fetured_description {
+        margin: 13px 0;
+    }
+
+    .fetured_all {
+        margin: 33px auto 70px auto;
+    }
+}
+
+@media (max-width: 735px) and (min-width: 376px) {
     .fetured_box {
         grid-template-columns: 1fr 1fr;
     }
@@ -343,11 +392,12 @@ img {
     }
 }
 
-@media (max-width: 359px) {
+@media (max-width: 375px) {
+    .navigation .buttonProfile, .navigation .buttonBasket {
+        display: none;
+    }
     .section1 {
         grid-template-columns: 1fr;
-        margin-left: 16px;
-        margin-right: 16px;
     }
 
     .fetured_box {
@@ -358,8 +408,38 @@ img {
         grid-column-end: 2;
     }
 
+    .for_men, .for_woman, .for_kids{
+        min-height: 247px;
+    }
+
+    .for_men .fill, .for_woman .fill, .for_kids .fill {
+        min-height: 247px;
+    }
+
+    .accesories {
+        min-height: 111px;
+        background-image: url("./img/accesories2.png");
+    }
+
+    .accesories .fill {
+        min-height: 111px;
+    }
+
     .fetured_items {
         margin-right: 8px;
         margin-left: 8px;
+        margin-top: 64px;
+    }
+
+    .fetured_box {
+        padding-top: 65px;
+    }
+
+    .fetured_description {
+        margin: 13px 0 18px 0;
+    }
+
+    .fetured_all {
+        margin: 40px auto 85px auto;
     }
 }
