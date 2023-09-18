@@ -315,7 +315,14 @@ img {
     cursor: pointer;
 }
 
-@media (max-width: 1050px) and (min-width: 680px) {
+@media (max-width: 1172px) {
+    .container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 1050px) and (min-width: 679px) {
     .navigation .container {
         margin-left: 32px;
         margin-right: 41px;
@@ -348,7 +355,7 @@ img {
     }
 }
 
-@media (max-width: 679px) {
+@media (max-width: 680px) {
     .bannerContainer {
         justify-content: center;
         min-height: 364px;
@@ -376,14 +383,17 @@ img {
     }
 }
 
-@media (max-width: 1172px) {
-    .container {
-        margin-left: 16px;
-        margin-right: 16px;
+@media (max-width: 770px) {
+    .fetured_box {
+        gap: 16px;
+    }
+
+    .fetured_text {
+        padding: 26px 18px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) and (min-width: 376px) {
     .for_men, .for_woman, .for_kids {
         min-height: 168px;
     }
@@ -400,36 +410,23 @@ img {
         min-height: 116px;
     }
 
-    .fetured_items {
-        margin-top: 109px;
-    }
-
-    .fetured_box {
-        padding-top: 72px;
-        gap: 16px;
-    }
-
-    .fetured_text {
-        padding: 26px 18px;
-    }
-
-    .fetured_description {
-        margin: 13px 0;
-    }
-
-    .fetured_all {
-        margin: 33px auto 70px auto;
-    }
-}
-
-@media (max-width: 735px) and (min-width: 376px) {
     .fetured_box {
         grid-template-columns: 1fr 1fr;
+        padding-top: 72px;
     }
 
     .fetured_items {
         margin-right: 16px;
         margin-left: 16px;
+        margin-top: 109px;
+    }
+
+    .fetured_all {
+        margin: 33px auto 70px auto;
+    }
+
+    .fetured_description {
+        margin: 13px 0;
     }
 }
 
