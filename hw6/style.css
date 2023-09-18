@@ -335,15 +335,12 @@ img {
         gap: 40px;
     }
 
-    .brand_texts {
-        margin: 0 0 0 0;
-    }
-
     .bannerContainer img {
         max-height: 386px;
     }
 
     .brand_texts {
+        margin: 0 0 0 0;
         font-size: 44px;
         border-left: 16px solid #F16D7F;
     }
@@ -363,17 +360,14 @@ img {
         min-height: 364px;
     }
 
-    .brand_texts {
-        margin: 0 auto 0 auto;
-        min-width: 0;
-    }
-
     .bannerContainer img {
         display: none;
     }
 
     .brand_texts {
         font-size: 38px;
+        margin: 0 auto 0 auto;
+        min-width: 0;
     }
 
     .brand_text1 {
