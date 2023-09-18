@@ -322,12 +322,14 @@ img {
     }
 }
 
-@media (max-width: 1050px) and (min-width: 679px) {
+@media (max-width: 1213px) {
     .navigation .container {
         margin-left: 32px;
         margin-right: 41px;
     }
+}
 
+@media (max-width: 1050px) and (min-width: 679px) {
     .bannerContainer {
         justify-content: center;
         gap: 40px;
