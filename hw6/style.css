@@ -85,8 +85,9 @@ img {
     line-height: normal;
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
-    margin-right: 300px;
-    min-width: 400px;
+    /*margin-right: 300px;*/
+    min-width: 800px;
+
 }
 
 .brand_text1 {
@@ -329,7 +330,7 @@ img {
     }
 }
 
-@media (max-width: 1050px) and (min-width: 679px) {
+@media (max-width: 1145px) and (min-width: 715px) {
     .bannerContainer {
         justify-content: center;
         gap: 40px;
@@ -343,6 +344,7 @@ img {
         margin: 0 0 0 0;
         font-size: 44px;
         border-left: 16px solid #F16D7F;
+        min-width: 386px;
     }
 
     .brand_text1 {
@@ -354,7 +356,7 @@ img {
     }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 714px) {
     .bannerContainer {
         justify-content: center;
         min-height: 364px;
@@ -390,6 +392,10 @@ img {
 }
 
 @media (max-width: 770px) and (min-width: 376px) {
+    .section1 {
+        gap: 20px;
+    }
+
     .for_men, .for_woman, .for_kids {
         min-height: 168px;
     }
