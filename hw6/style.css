@@ -73,7 +73,7 @@ img {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    gap: 0px;
+    gap: 0;
 }
 
 .brand_texts {
@@ -366,13 +366,14 @@ img {
 .footer__container {
     max-width: 1600px;
     margin: 0 auto;
-    background-image: url("./img/footerBackground.png");
+    background: url("./img/footerBackground.png") no-repeat;
+    background-size: cover;
 }
 
 .footer__content {
-    background: rgba(244, 244, 244, 0.70);
     padding-top: 96px;
     padding-bottom: 126px;
+    background: rgba(244, 244, 244, 0.70);
 }
 
 .footer__content .container {
@@ -615,6 +616,17 @@ img {
         flex-direction: column;
         align-items: center;
         gap: 48px;
+    }
+
+    .footer__container {
+        background-image: url("./img/footerBackground2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .footer__content {
+        padding-top: 64px;
+        padding-bottom: 140px;
     }
 }
 
