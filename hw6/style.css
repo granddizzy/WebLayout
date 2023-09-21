@@ -521,6 +521,10 @@ img {
     align-items: center;
 }
 
+.socials__icon:hover {
+    background-color: #F16D7F;
+}
+
 @media (max-width: 1172px) {
     .container {
         margin-left: 16px;
@@ -671,8 +675,8 @@ img {
 
 @media (max-width: 430px) {
     .socials .container {
-        flex-direction: column;
         gap: 30px;
+        flex-direction: column-reverse;
     }
 }
 
