@@ -363,19 +363,19 @@ img {
     background: rgba(244, 244, 244, 0.70);
 }
 
-.backgroundContainer {
+.footer__container {
     max-width: 1600px;
     margin: 0 auto;
     background-image: url("./img/footerBackground.png");
 }
 
-.footer__items {
+.footer__content {
     background: rgba(244, 244, 244, 0.70);
     padding-top: 96px;
     padding-bottom: 126px;
 }
 
-.footer__items .container {
+.footer__content .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -384,18 +384,18 @@ img {
     align-items: center;
 }
 
-.footer_item {
+.footer__side {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.footer__items .leftItem {
+.footer__content .footer__leftSide {
     max-width: 360px;
     text-align: center;
 }
 
-.footer__items .leftItem p {
+.footer__content .footer__leftSide p {
     margin-top: 30px;
     color: #222224;
     text-align: center;
@@ -406,15 +406,15 @@ img {
     line-height: normal;
 }
 
-.footer__items .leftItem p span {
+.footer__content .footer__leftSide p span {
     font-style: italic;
 }
 
-.footer__items .rigthItem {
+.footer__content .footer__rightSide {
     max-width: 557px;
 }
 
-.footer__items .rigthItem p {
+.footer__content .footer__rightSide p {
     max-width: 557px;
     color: #222224;
     text-align: center;
@@ -425,7 +425,7 @@ img {
     line-height: 167.2%; /* 40.128px */
 }
 
-.footer__items .rigthItem p span {
+.footer__content .footer__rightSide p span {
     font-size: 18px;
     font-weight: 400;
 }
@@ -497,7 +497,7 @@ img {
     line-height: normal;
 }
 
-.socials_icons {
+.socials__icons {
     min-width: 150px;
     display: flex;
     flex-direction: row;
@@ -507,7 +507,7 @@ img {
     align-items: center;
 }
 
-.social_icon {
+.socials__icon {
     background-color: #F8F8F8;
     min-width: 32px;
     min-height: 32px;
@@ -560,12 +560,12 @@ img {
 }
 
 @media (max-width: 750px) {
-    .footer__items {
+    .footer__content {
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
-    .footer__items .container {
+    .footer__content .container {
         flex-direction: column;
         align-items: center;
         gap: 10px;
