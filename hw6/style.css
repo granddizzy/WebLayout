@@ -606,10 +606,15 @@ img {
         padding: 26px 18px;
     }
 
+    .section2 {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
     .section2__items {
         flex-direction: column;
         align-items: center;
-        gap: 100px;
+        gap: 48px;
     }
 }
 
