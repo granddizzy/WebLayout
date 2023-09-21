@@ -405,6 +405,7 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    min-height: 99px;
 }
 
 .footer__content .footer__leftSide p span {
@@ -560,17 +561,8 @@ img {
     }
 }
 
-@media (max-width: 750px) {
-    .footer__content {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+@media (max-width: 770px) {
 
-    .footer__content .container {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
 }
 
 @media (max-width: 714px) {
@@ -599,6 +591,12 @@ img {
 }
 
 @media (max-width: 770px) {
+    .footer__content .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
     .fetured_box {
         gap: 16px;
     }
