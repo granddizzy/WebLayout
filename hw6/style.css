@@ -117,6 +117,7 @@ img {
     line-height: normal;
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
+    max-width: 405px;
 }
 
 .brand_text1 {
@@ -623,6 +624,7 @@ img {
 
     .brand_texts {
         font-size: 44px;
+        max-width: 311px;
     }
 
     .brand_text1 {
