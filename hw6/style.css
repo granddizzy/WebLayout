@@ -100,11 +100,12 @@ img {
     align-items: center;
     margin: 0 auto;
     gap: 0;
+    position: relative;
 }
 
 .banner__rightSide {
     min-width: 800px;
-    padding-left: 63px;
+    padding-left: 60px;
 }
 
 .brand_texts {
@@ -134,6 +135,41 @@ img {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.mainMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 232px;
+    background-color: #FFF;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 232px;
+    filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+    padding: 32px 33px 21px 33px;
+}
+
+.mainMenu h3 {
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.mainMenu__firstLevel a {
+    color: #F16D7F;
+}
+
+.mainMenu__secondLevel a {
+    padding-left: 27px;
+    color: #6F6E6E;
+}
+
+.mainMenu li {
+    padding-top: 11px;
 }
 
 .section1 {
@@ -211,11 +247,11 @@ img {
     text-align: center;
 }
 
-.fetured_items {
+.fetured {
     margin-top: 96px;
 }
 
-.fetured_items h1 {
+.fetured h1 {
     color: #222;
     font-family: Lato, sans-serif;
     font-size: 30px;
@@ -225,7 +261,7 @@ img {
     text-align: center;
 }
 
-.fetured_items .description {
+.fetured .description {
     color: #9F9F9F;
     font-family: Lato, sans-serif;
     font-size: 14px;
@@ -236,7 +272,7 @@ img {
     text-align: center;
 }
 
-.fetured_box {
+.fetured___items {
     display: grid;
     align-content: center;
     justify-content: center;
@@ -247,13 +283,13 @@ img {
     gap: 30px;
 }
 
-.fetured_item {
+.fetured__item {
     background-color: #F8F8F8;
     background-repeat: space;
     background-position: center;
 }
 
-.fetured_item .photo {
+.fetured__item .fetured__photo {
     position: relative;
 }
 
@@ -261,7 +297,7 @@ img {
     display: none;
 }
 
-.fetured_item:hover .fetured_fill {
+.fetured__item:hover .fetured_fill {
     display: flex;
     width: 100%;
     height: 100%;
@@ -294,11 +330,11 @@ img {
     line-height: normal;
 }
 
-.fetured_text {
+.fetured__text {
     padding: 24px 16px;
 }
 
-.fetured_title {
+.fetured__title {
     color: #000;
     font-family: Lato, sans-serif;
     font-size: 13px;
@@ -307,7 +343,7 @@ img {
     line-height: normal;
 }
 
-.fetured_description {
+.fetured__description {
     color: #5D5D5D;
     font-family: Lato, sans-serif;
     font-size: 14px;
@@ -317,7 +353,7 @@ img {
     margin: 16px 0;
 }
 
-.fetured_price {
+.fetured__price {
     color: #F16D7F;
     font-family: Lato, sans-serif;
     font-size: 16px;
@@ -326,11 +362,11 @@ img {
     line-height: normal;
 }
 
-.fetured_items .buttons {
+.fetured .buttons {
     display: flex;
 }
 
-.fetured_all {
+.fetured__allButton {
     color: #F26376;
     font-family: Lato, sans-serif;
     font-size: 16px;
@@ -342,6 +378,11 @@ img {
     background-color: #FFF;
     border: 1px solid #F25822;
     cursor: pointer;
+}
+
+.fetured__allButton:hover {
+    background-color: #F16D7F;
+    color: #FFF;
 }
 
 .section2 {
@@ -392,9 +433,8 @@ img {
 }
 
 .footer__container {
-    max-width: 1600px;
-    margin: 0 auto;
-    background: url("./img/footerBackground.png") no-repeat;
+    background-image: url("./img/footerBackground.png");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -419,12 +459,12 @@ img {
     align-items: center;
 }
 
-.footer__content .footer__leftSide {
+.footer__leftSide {
     max-width: 360px;
     text-align: center;
 }
 
-.footer__content .footer__leftSide p {
+.footer__leftSide p {
     margin-top: 30px;
     color: #222224;
     text-align: center;
@@ -436,15 +476,15 @@ img {
     min-height: 99px;
 }
 
-.footer__content .footer__leftSide p span {
+.footer__leftSide p span {
     font-style: italic;
 }
 
-.footer__content .footer__rightSide {
-    max-width: 557px;
+.footer__rightSide {
+    min-width: 557px;
 }
 
-.footer__content .footer__rightSide p {
+.footer__rightSide p {
     max-width: 557px;
     color: #222224;
     text-align: center;
@@ -455,7 +495,7 @@ img {
     line-height: 167.2%; /* 40.128px */
 }
 
-.footer__content .footer__rightSide p span {
+.footer__rightSide p span {
     font-size: 18px;
     font-weight: 400;
 }
@@ -467,8 +507,8 @@ img {
 
 .footer__email input {
     background-color: #E1E1E1;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
+    border-bottom-left-radius: 23px;
+    border-top-left-radius: 23px;
     border: none;
     min-height: 49px;
     min-width: 256px;
@@ -485,8 +525,8 @@ img {
 
 .footer__email button {
     background-color: #F16D7F;
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 50px;
+    border-bottom-right-radius: 23px;
+    border-top-right-radius: 23px;
     border: none;
     min-height: 49px;
     min-width: 100px;
@@ -578,7 +618,7 @@ img {
 
     .banner__rightSide {
         min-width: 386px;
-        padding-left:  39px;
+        padding-left: 39px;
     }
 
     .brand_texts {
@@ -594,8 +634,16 @@ img {
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 950px) {
+    .footer__content .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
 
+    .footer__rightSide {
+        min-width: 0;
+    }
 }
 
 @media (max-width: 714px) {
@@ -628,17 +676,11 @@ img {
 }
 
 @media (max-width: 770px) {
-    .footer__content .container {
-        flex-direction: column;
-        align-items: center;
-        gap: 48px;
-    }
-
-    .fetured_box {
+    .fetured___items {
         gap: 16px;
     }
 
-    .fetured_text {
+    .fetured__text {
         padding: 26px 18px;
     }
 
@@ -655,8 +697,6 @@ img {
 
     .footer__container {
         background-image: url("./img/footerBackground2.png");
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .footer__content {
@@ -686,22 +726,22 @@ img {
         min-height: 116px;
     }
 
-    .fetured_box {
+    .fetured___items {
         grid-template-columns: 1fr 1fr;
         padding-top: 72px;
     }
 
-    .fetured_items {
+    .fetured {
         margin-right: 16px;
         margin-left: 16px;
         margin-top: 109px;
     }
 
-    .fetured_all {
+    .fetured__allButton {
         margin: 33px auto 70px auto;
     }
 
-    .fetured_description {
+    .fetured__description {
         margin: 13px 0;
     }
 }
@@ -722,7 +762,7 @@ img {
         grid-template-columns: 1fr;
     }
 
-    .fetured_box {
+    .fetured___items {
         grid-template-columns: 1fr;
     }
 
@@ -747,25 +787,29 @@ img {
         min-height: 111px;
     }
 
-    .fetured_items {
+    .fetured {
         margin-right: 8px;
         margin-left: 8px;
         margin-top: 64px;
     }
 
-    .fetured_box {
+    .fetured___items {
         padding-top: 65px;
     }
 
-    .fetured_description {
+    .fetured__description {
         margin: 13px 0 18px 0;
     }
 
-    .fetured_all {
+    .fetured__allButton {
         margin: 40px auto 85px auto;
     }
 
     .footer__email input {
         min-width: 0;
+    }
+
+    .footer__container {
+        background-image: url("./img/footerBackground3.png");
     }
 }
