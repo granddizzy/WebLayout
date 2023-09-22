@@ -102,6 +102,11 @@ img {
     gap: 0;
 }
 
+.banner__rightSide {
+    min-width: 800px;
+    padding-left: 63px;
+}
+
 .brand_texts {
     color: #222;
     font-family: Lato, sans-serif;
@@ -111,9 +116,6 @@ img {
     line-height: normal;
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
-    /*margin-right: 300px;*/
-    min-width: 800px;
-
 }
 
 .brand_text1 {
@@ -568,18 +570,19 @@ img {
 @media (max-width: 1145px) and (min-width: 715px) {
     .bannerContainer {
         justify-content: center;
-        gap: 40px;
     }
 
     .bannerContainer img {
         max-height: 386px;
     }
 
-    .brand_texts {
-        margin: 0 0 0 0;
-        font-size: 44px;
-        border-left: 16px solid #F16D7F;
+    .banner__rightSide {
         min-width: 386px;
+        padding-left:  39px;
+    }
+
+    .brand_texts {
+        font-size: 44px;
     }
 
     .brand_text1 {
@@ -605,10 +608,14 @@ img {
         display: none;
     }
 
+    .banner__rightSide {
+        min-width: 0;
+        padding: 0;
+    }
+
     .brand_texts {
         font-size: 38px;
         margin: 0 auto 0 auto;
-        min-width: 0;
     }
 
     .brand_text1 {
@@ -707,7 +714,7 @@ img {
 }
 
 @media (max-width: 375px) {
-    .navigation .buttonProfile, .navigation .buttonBasket, .basketCouner{
+    .navigation .buttonProfile, .navigation .buttonBasket, .basketCouner {
         display: none;
     }
 
