@@ -64,7 +64,7 @@ img {
     position: relative;
 }
 
-.basketCouner {
+.basketCounter {
     position: absolute;
     top: -6px;
     right: -8px;
@@ -756,7 +756,7 @@ img {
 }
 
 @media (max-width: 375px) {
-    .navigation .buttonProfile, .navigation .buttonBasket, .basketCouner {
+    .navigation .buttonProfile, .navigation .buttonBasket, .basketCounter {
         display: none;
     }
 
