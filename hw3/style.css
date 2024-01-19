@@ -363,13 +363,26 @@ h4 {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 107px;
+}
+
+.section5__leftside {
+    position: relative;
+    width: 557px;
+}
+
+.section5__leftside .compass {
+    position: absolute;
+    top: -70px;
+    left: -350px;
+    max-width: 900px;
 }
 
 .section5__rightside {
     max-width: 557px;
-    padding-top: 107px;
+
 }
 
 .section5__about {
@@ -501,6 +514,12 @@ h4 {
 
 .section8 h1 {
     text-align: center;
+    color: #000;
+
+    font-family: Gilroy-Bold, serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 150%; /* 67.5px */
 }
 
