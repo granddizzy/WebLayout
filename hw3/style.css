@@ -38,6 +38,32 @@ img {
 
 .logo {
     max-width: 137px;
+    max-width: 137px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.logoGrow {
+    color: #000;
+
+    font-family: Gilroy-Bold, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logoBe {
+    color: #F25822;
+    font-family: Gilroy-Bold, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .container {
