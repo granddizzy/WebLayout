@@ -88,10 +88,15 @@ img {
     font-weight: 400;
     line-height: normal;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .navigation a {
     color: #000;
+}
+
+.navigation img {
+    display: inline-block;
 }
 
 .navigation .active {
