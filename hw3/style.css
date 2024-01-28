@@ -244,23 +244,60 @@ h4 {
     justify-content: space-between;
     align-items: center;
     min-height: 540px;
+
+    position: relative;
 }
 
 .section2__left-side {
     max-width: 515px;
+    z-index: 1;
+}
+
+.section2__left-side h2 {
+    max-width: 409px
 }
 
 .section2 img {
     max-height: 490px;
+    z-index: 1;
 }
 
 .section2__about {
     margin-top: 20px;
     color: #666;
+    z-index: 2;
 }
 
 .section2__btn {
     margin-top: 35px;
+}
+
+.section2__vector1 {
+    position: absolute;
+    top: 100px;
+    left: -520px;
+    z-index: 0;
+    width: 2896px;
+    height: 467px;
+    transform: rotate(2.095deg);
+    flex-shrink: 0;
+
+    stroke-width: 2px;
+    stroke: #F0F0F0;
+}
+
+.section2__vector2 {
+    position: absolute;
+    top: -110px;
+    left: -460px;
+    z-index: 0;
+    width: 3394px;
+    height: 549px;
+    transform: rotate(-2.095deg);
+    flex-shrink: 0;
+
+    stroke-width: 2px;
+    stroke: #F0F0F0;
 }
 
 .section3 {
